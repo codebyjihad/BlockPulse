@@ -1,12 +1,22 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 import { navItems } from './data/navitems'
-import { NavLink } from 'react-router'
+import {  NavLink } from 'react-router'
 import { FaMoon, FaSun } from "react-icons/fa";
+import { IoMdClose , IoMdMenu } from "react-icons/io";
+
 
 import Search from './Search'
 
 const Navbar = () => {
+   
+    const [isMenuOpen, setIsmenuOpen] = useState(false)
+    
+     const toggleMobileMenu = () => {
+        setIsmenuOpen(!isMenuOpen)
+     }
+
+
     const [isDarkMode, setIsDarkMode] = useState(false)
     const toggleDarkMode = () => setIsDarkMode(!isDarkMode)
 
@@ -47,10 +57,19 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
+
+                {/* mobile menu bar */}
+                <div className='md:hidden block'>
+                    <button onClick={toggleMobileMenu} className='cursor-pointer'>
+                        {
+                            isMenuOpen? <IoMdClose className='size-6 text-gray-600'/>:<IoMdMenu className='size-6 text-gray-600'/>
+                        }
+                    </button>
+                </div>
             </div>
             {/* mobile menu items */}
             <div className='hidden'>
-                Mobile
+                
             </div>
         </nav>
     )
