@@ -82,8 +82,8 @@ const Navbar = () => {
                                     to={items.to}>{items.name}</NavLink></li>
                             ))
                         }
+                        <Search/>
                     </ul>
-                    <Search/>
                 </div>
             }
         </nav>
