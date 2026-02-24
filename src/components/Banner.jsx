@@ -5,6 +5,14 @@ import { GoPersonFill } from "react-icons/go";
 
 const Banner = () => {
     const date = new Date()
+    const formattedDate = date.toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
   return (
     <div className='my-16'>
           <div className='text-center mb-8'>
@@ -25,7 +33,7 @@ const Banner = () => {
                        <GoPersonFill className='size-8'/>
                        <div className='flex flex-wrap items-center space-x-4'>
                           <span className='ml-2 text-balance cursor-pointer hover:underline underline-offset-2'>Tracay Wilson</span>
-                          <span className=''>{date.toLocaleDateString()}</span>
+                          <span>{formattedDate}</span>
                        </div>
                     </div>
                 </div>
