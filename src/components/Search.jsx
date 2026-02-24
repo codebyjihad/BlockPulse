@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 const Search = () => {
   return (
     <div className='relative'>
-        <input type='text' placeholder='Search.....' className='bg-[#F4F4F5] py-2  px-4 focus:outline-none rounded-xl'/>
+        <input type='text' placeholder='Search.....' className='bg-[#F4F4F5] py-2  px-4 focus:outline-none rounded-xl focus:ring-2 focus:ring-blue-500'/>
         <button><FaSearch className=' absolute right-3 top-2.5 hover:text-secondary' /></button>
     </div>
   )
