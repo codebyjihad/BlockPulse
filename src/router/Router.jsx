@@ -5,6 +5,7 @@ import Home from "../pages/home/Home";
 import Blogs from "../pages/blog/Blogs";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
+import AddBlogs from "../pages/blog/AddBlogs";
 
 
 const router = createBrowserRouter([
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
                 Component: Home,
             },
             {
-                path:'/block',
+                path:'/blogs',
                 element:<Blogs/>
+            },
+            {
+                path:'/add-blog',
+                element:<AddBlogs/>
             },
             {
                 path:'/about',
