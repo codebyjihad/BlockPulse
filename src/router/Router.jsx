@@ -7,6 +7,8 @@ import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import AddBlogs from "../pages/blog/AddBlogs";
 import ManageBlog from "../pages/manage/ManageBlog";
+import Update from "../pages/manage/Update";
+import BlogDeitals from "../pages/blog/BlogDeitals";
 
 
 const router = createBrowserRouter([
@@ -23,12 +25,20 @@ const router = createBrowserRouter([
                 element:<Blogs/>
             },
             {
+              path:'blogs/:id',
+              element:<BlogDeitals/>
+            },
+            {
                 path:'/add-blog',
                 element:<AddBlogs/>
             },
             {
                 path:'/manage_blog',
                 element:<ManageBlog/>
+            },
+            {
+                path:'/blogs/edit/:id',
+                element:<Update/>
             },
             {
                 path:'/about',

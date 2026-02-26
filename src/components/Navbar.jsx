@@ -9,9 +9,7 @@ import { IoMdClose, IoMdMenu } from "react-icons/io";
 import Search from './Search'
 
 const Navbar = () => {
-
     const [isMenuOpen, setIsmenuOpen] = useState(false)
-
     const toggleMobileMenu = () => {
         setIsmenuOpen(!isMenuOpen)
     }
