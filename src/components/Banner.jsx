@@ -20,7 +20,7 @@ const Banner = () => {
               <ul className='flex flex-wrap  items-center justify-center gap-4'>
                 <Link to='/' className='bg-secondary/10 px-2.5 py-1 rounded-full hover:text-secondary hover:underline underline-offset-4'>Home</Link>
                 <Link to='/add-blog' className='bg-secondary/10 px-2.5 py-1 rounded-full hover:text-secondary hover:underline underline-offset-4'>Add New Blog</Link>
-                <Link to='/' className='bg-secondary/10 px-2.5 py-1 rounded-full hover:text-secondary hover:underline underline-offset-4'>Manage Blog</Link>
+                <Link to='/manage_blog' className='bg-secondary/10 px-2.5 py-1 rounded-full hover:text-secondary hover:underline underline-offset-4'>Manage Blog</Link>
               </ul>
           </div>
           {/* Banner Image */}
